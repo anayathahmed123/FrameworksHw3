@@ -78,7 +78,7 @@ public class BestbuyHome extends Clicking {
         // /html/body/div[5]/main/div[12]/div/div/div/div/div/div/div[2]/div[2]/div[3]/div/div[5]/ol/li[12]/div/div/div/div/div/div[2]/div[1]/div/div/div/div/div/div/div[1]/div/div/div/span[1]
             elementsPrices.put("Crisis Core-Final Fantasy VII-Reunion - PlayStation 5", driver.findElement(By.xpath("//span[text()='$49.99']")).getText());
 
-        //for loop to search through the hashmap and get the key and value
+        //for loop to search through the hashmap and get the keys and values
         for (HashMap.Entry<String, String> entry : elementsPrices.entrySet()) {
             String gameTitle = entry.getKey();
             String expectedPrice = entry.getValue();
