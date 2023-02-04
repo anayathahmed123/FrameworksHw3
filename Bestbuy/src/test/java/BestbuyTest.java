@@ -5,7 +5,9 @@ public class BestbuyTest extends BestbuyHome {
 // the end to end test for Bestbuy
     @Test
     public void BestbuySearchTest() throws Exception{
-        SearchPriceTest();
+       searchPriceTest();
+        //getToTheGames();
+        //Hashmaps();
     }
 
 }
