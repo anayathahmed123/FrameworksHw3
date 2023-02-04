@@ -17,7 +17,7 @@ public class Driver {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.target.com");
+        driver.get("https://www.bestbuy.com");
 
         driver.manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
     }
