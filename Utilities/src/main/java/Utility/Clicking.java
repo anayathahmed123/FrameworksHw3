@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-
+//edit
 public class Clicking {
 
     //try catch to try multiple different locators when I need to click something
