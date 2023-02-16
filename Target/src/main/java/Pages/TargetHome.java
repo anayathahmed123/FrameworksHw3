@@ -36,7 +36,7 @@ public class TargetHome extends Clicking{
         ButtonClicker(getGroceryButtonLocator());
     }
     public void clickMoreCategories(){
-        setMoreCategoriesButtonLocator("//span[text()='Show 11 more categories']");
+        setMoreCategoriesButtonLocator("//span[text()='Show 10 more categories']");
         ButtonClicker(getMoreCategoriesButtonLocator());
     }
     public void clickBrunchIdeas(){

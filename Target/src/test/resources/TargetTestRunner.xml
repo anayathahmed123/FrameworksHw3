@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- This is the TestNG test runner file for the Best Buy module -->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- This suite has all the tests for this module -->
+<suite name="All Tests Suite">
+    <!-- The end to end and features are tests   -->
+    <test name="End-to-end Tests">
+        <!-- The following test classes are used in this suite -->
+        <classes>
+            <class name="TargetHomeTest"/>
+        </classes>
+    </test>
+</suite>
