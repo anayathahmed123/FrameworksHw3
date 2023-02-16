@@ -1,4 +1,5 @@
 import Pages.TargetBrunch;
+import Utility.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -44,7 +45,7 @@ public class TargetE2ETest extends TargetBrunch {
                 xpath += products.get(i) + "') or contains(text(),'";
             }
         }
-        List<WebElement> actualProductNames = driver.findElements(By.xpath(xpath));
+        List<WebElement> actualProductNames = Driver.driver.findElements(By.xpath(xpath));
         List<String> actualProductNamesAsStrings = new ArrayList<>();
         for (WebElement product : actualProductNames) {
             actualProductNamesAsStrings.add(product.getText());

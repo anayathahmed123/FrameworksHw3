@@ -12,18 +12,17 @@ public class Driver {
 
     public static WebDriver driver = null;
 
-    @BeforeMethod
-    public void startUp() {
+
+    public static void startUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.bestbuy.com");
 
         driver.manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
     }
 
 //    @AfterMethod
-//    public void shutDown(){
+//    public static void shutDown(){
 //        driver.close();
 //    }
 }

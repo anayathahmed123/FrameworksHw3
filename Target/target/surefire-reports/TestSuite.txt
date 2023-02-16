@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 15.967 sec <<< FAILURE!
+TargetClickTest(TargetHomeTest)  Time elapsed: 0.021 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at Utility.Clicking.ButtonClicker(Clicking.java:27)
+	at Pages.TargetHome.clickCategories(TargetHome.java:31)
+	at Pages.TargetHome.targetClicks(TargetHome.java:49)
+	at TargetHomeTest.TargetClickTest(TargetHomeTest.java:8)
+
+TargetTest(TargetE2ETest)  Time elapsed: 15.007 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at TargetE2ETest.TargetTest(TargetE2ETest.java:48)
+
