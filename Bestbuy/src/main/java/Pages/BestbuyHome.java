@@ -90,6 +90,15 @@ public class BestbuyHome extends Clicking {
         }
     }
 
+    private String searchBarLocator;
+    public String getSearchBarLocator(){return searchBarLocator;}
+    public void setSearchBarLocator(String searchBarLocator){
+        this.searchBarLocator = searchBarLocator;
+    }
+    public void typeInSearchBar(){
+        setSearchBarLocator("//button[text()='Menu']");
+        ButtonClicker(getSearchBarLocator());
+    }
 
 
 

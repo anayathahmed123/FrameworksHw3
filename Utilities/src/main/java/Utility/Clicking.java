@@ -1,6 +1,7 @@
 package Utility;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 
 public class Clicking extends Driver {
@@ -28,6 +29,18 @@ public class Clicking extends Driver {
                }
         }
     }
+
+    //javascript executor method to click back on a page
+    public static void clickBack(){
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("window.history.back()");
+    }
+
+//    //send keys
+//    public static void typeInLetters(){
+//
+//    }
+
 }
 
 
